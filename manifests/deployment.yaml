@@ -6,6 +6,8 @@ metadata:
     app: go-simple-webserver
 spec:
   replicas: 2
+  syncPolicy:
+    automated: {}
   selector:
     matchLabels:
       app: go-simple-webserver
